@@ -1,4 +1,0 @@
-rgb(118,137,222) (orangish)
-rgb(246, 175, 133) (Bluish)
-
- border-radius: 25px;
