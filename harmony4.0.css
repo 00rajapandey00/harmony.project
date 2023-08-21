@@ -128,13 +128,18 @@ body {
     width: 200px;
     z-index: 997;
     transition: right 0.2s ease-in-out;
+    backdrop-filter: blur(50px);
+    background-color: rgba(0, 0, 0, 0.655);
 }
 
 .sidebar ul {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     list-style: none;
     padding: 10px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(50px);
 }
 
 .sidebar li {
@@ -160,7 +165,7 @@ body {
 .filler {
     height: 55px;
     width: 200px;
-    background-color: #ff0000;
+    background-color: #000000;
 }
 
 .content-wrapper {
@@ -907,7 +912,7 @@ audio::-webkit-media-controls-time-remaining-display {
         align-items: center;
         justify-content: center;
         width: 35vw;
-        height: 45vw;
+        height: 30vw;
         position: relative;
     }
 
@@ -1170,7 +1175,12 @@ audio::-webkit-media-controls-time-remaining-display {
 
 @media (min-width: 0px) and (max-width: 506px) {
 
+    .horizontal_navbar {
+        height: 50px;
+    }
+
     .navbar_logo {
+        height: 50px;
         display: flex;
         width: 100%;
         justify-content: left;
@@ -1192,10 +1202,10 @@ audio::-webkit-media-controls-time-remaining-display {
     }
 
     .main-section-left {
-        margin-top: 60px;
+        margin-top: 50px;
         position: relative;
         width: 100vw;
-        height: 30vh;
+        height: 20vh;
         justify-content: center;
         align-items: flex-start;
     }
@@ -1205,7 +1215,7 @@ audio::-webkit-media-controls-time-remaining-display {
         backdrop-filter: blur(5px);
         margin-top: 0px;
         width: 100vw;
-        height: 30vh;
+        height: 20vh;
         position: relative;
         justify-content: center;
         align-items: center;
@@ -1220,25 +1230,25 @@ audio::-webkit-media-controls-time-remaining-display {
         align-items: center;
         justify-content: center;
         width: 35vw;
-        height: 45vw;
+        height: 20vh;
         position: relative;
     }
 
     .albumart {
         position: relative;
-        max-width: 115px;
+        max-width: 110px;
     }
 
     .details_text {
         display: flex;
         position: relative;
         color: #ffffff;
-        font-size: 10px;
+        font-size: 8px;
         align-self: center;
         align-items: center;
         justify-content: center;
         width: 75vw;
-        height: 30vh;
+        height: 20vh;
     }
 
     .hidden {
@@ -1264,28 +1274,28 @@ audio::-webkit-media-controls-time-remaining-display {
     }
 
     #details-track-name-cell {
-        max-width: 30vw;
-        min-width: 30vw;
+        max-width: 20vw;
+        min-width: 20vw;
     }
 
     #details-album-name-cell {
-        max-width: 30vw;
-        min-width: 30vw;
+        max-width: 20vw;
+        min-width: 20vw;
     }
 
     #details-artist-name-cell {
-        max-width: 30vw;
-        min-width: 30vw;
+        max-width: 20vw;
+        min-width: 20vw;
     }
 
     #details-release-year-cell {
-        max-width: 30vw;
+        max-width: 20vw;
         min-width: 30vw;
     }
 
     #details-track-duration-cell {
-        max-width: 30vw;
-        min-width: 30vw;
+        max-width: 20vw;
+        min-width: 20vw;
     }
 
     .slide-text {
@@ -1303,30 +1313,30 @@ audio::-webkit-media-controls-time-remaining-display {
         border: none;
         margin-bottom: 0px;
         width: 25vw;
-        height: 30vh;
+        height: 20vh;
         align-items: center;
         justify-content: center;
     }
 
     .lyrics button {
-        width: 55px;
-        height: 25px;
+        width: 45px;
+        height: 20px;
         align-self: center;
-        font-size: 8px;
+        font-size: 7px;
         margin: 6px;
     }
 
     .lyrics img {
-        width: 15px;
+        width: 12px;
     }
 
     .lyrics-container {
         align-self: center;
         width: 75vw;
-        height: 30vh;
+        height: 20vh;
         border-bottom-right-radius: 0px;
         border-bottom-left-radius: 0px;
-        font-size: 12px;
+        font-size: 10px;
         background-image: linear-gradient(hsla(0, 0%, 0%, 0), rgba(255, 255, 255, 0.112));
     }
 
@@ -1360,7 +1370,7 @@ audio::-webkit-media-controls-time-remaining-display {
     }
 
     .song1 {
-        max-width: 125px;
+        max-width: 110px;
     }
 
     .song img {
@@ -1368,7 +1378,7 @@ audio::-webkit-media-controls-time-remaining-display {
     }
 
     .song1 img {
-        width: 125px;
+        width: 110px;
         border-radius: 15px;
     }
 
@@ -1380,57 +1390,57 @@ audio::-webkit-media-controls-time-remaining-display {
     }
 
     .text1 {
-        max-width: 125px;
+        max-width: 110px;
         font-size: 9px;
         margin-top: 8px;
         line-height: 10px;
     }
 
     .section_one {
-        min-height: 30vh;
+        min-height: 20vh;
     }
 
     .section_two {
-        min-height: 30vh;
+        min-height: 20vh;
     }
 
     .section_three {
-        min-height: 30vh;
+        min-height: 20vh;
         margin-bottom: 75px;
     }
 
     .song-container-S1 {
-        height: 30vh;
+        height: 20vh;
     }
 
     .song-container-S2 {
-        height: 30vh;
+        height: 20vh;
     }
 
     .song-container-S3 {
-        height: 30vh;
+        height: 20vh;
     }
 
     .heading_section_one {
-        height: 40px;
-        font-size: 16px;
+        height: 30px;
+        font-size: 12px;
     }
 
     .heading_section_two {
-        height: 40px;
-        font-size: 16px;
+        height: 30px;
+        font-size: 12px;
     }
 
     .heading_section_three {
-        height: 40px;
-        font-size: 16px;
+        height: 30px;
+        font-size: 12px;
     }
 
     .menu-btn {
         display: flex;
         position: relative;
         width: 100px;
-        height: 55px;
+        height: 50px;
         justify-content: center;
         align-items: center;
         cursor: pointer;
