@@ -1,0 +1,192 @@
+<!--Document_Type_Declaration-->
+<!DOCTYPE html>
+
+<!--HTML_lang_Attribute-->
+<html lang="en-GB">
+
+<head>
+    <!--Title_of_Homepage-->
+    <title>harmony</title>
+
+    <!--Set_of _Meta_Tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Description" content="Enter your description here" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Main_CSS_File>-->
+    <link rel="stylesheet" type="text/css" href="harmony4.0.css">
+
+    <!--Edit_Favicon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!--Google_Fonts_Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <nav class="horizontal_navbar">
+
+        <!--Navbar_Logo-->
+        <div class="navbar_logo">
+            <a href="index.html"><img src="Navbar_Logo_6.0.png"></img></a>
+        </div>
+
+        <!--Navbar_Menu_Items-->
+        <div class="navlist">
+            <ul>
+                <li><a href="Library.html" class="navlist_items">Library</a></li>
+                <li><a href="" class="navlist_items">Playlists</a></li>
+                <li><a href="" class="navlist_items">News</a></li>
+                <li><a href="" class="navlist_items">Search</a></li>
+                <li><a href="" class="navlist_items">Contact</a></li>
+            </ul>
+        </div>
+
+        <!--Navbar_Hamburger_Menu_Button-->
+        <div class="menu-btn">
+            <div class="menu-btn-burger"></div>
+        </div>
+
+        <!--Navbar_Sidebar_Menu-->
+        <div class="sidebar">
+            <div class="filler"></div>
+            <ul>
+                <li><a href="Library.html">Library</a></li>
+                <li><a href="#playlists">Playlists</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!--Main_Wrapper-->
+    <div class="content-wrapper">
+
+        <!--Left_Page-->
+        <div class="main-section-left">
+
+            <!--Player_Main_Container-->
+            <div class="player_container">
+
+                <!--Albumart_Display_-->
+                <div class="albumart_container" id="album-art-container">
+                    <img src="Bg_15.jpg" class="albumart" id="album-art">
+                </div>
+
+                <!--Lyrics_Block-->
+                <div class="lyrics">
+                    <button>&nbsp<img src=lyrics_icon.png>&nbsp&nbspLyrics</button>
+                    <button>&nbsp<img src="favourite_icon.png">&nbsp&nbspLike</button>
+                    <button>&nbsp&nbsp&nbspMore&nbsp<img src="more_icon.png"></button>
+                </div>
+
+                <!--Song_Details-->
+                <div class="details_text">
+                    <table class="table">
+                        <tr>
+                            <td>Track:</td>
+                            <td id="details-track-name-cell">
+                                <span id="details-track-name" style="color: rgb(135, 120, 81);">Nothing To
+                                    Display</span>
+                            </td>
+                        <tr>
+                            <td>Album:</td>
+                            <td id="details-album-name-cell">
+                                <span id="details-album-name" class="slide-text"
+                                    style="color: rgb(135, 120, 81);">Nothing To Display</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Artist:</td>
+                            <td id="details-artist-name-cell">
+                                <span id="details-artist-name" class="slide-text"
+                                    style="color: rgb(135, 120, 81);">Nothing To Display</span>
+                        </tr>
+                        <tr>
+                            <td>Year of Release:</td>
+                            <td id="details-release-year-cell">
+                                <span id="details-release-year" style="color: rgb(135, 120, 81);">Nothing To
+                                    Display</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Track Duration:</td>
+                            <td id="details-track-duration-cell">
+                                <span id="details-track-duration" style="color: rgb(135, 120, 81);">Nothing To
+                                    Display</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!--Pre_Hiddden_Lyrics-->
+                <div class="lyrics-container">
+                    <pre id="song-lyrics" class="hidden"></pre>
+                </div>
+
+            </div>
+        </div>
+
+        <!--Right_Page-->
+        <div class="main-section-right">
+
+            <!--Top_30_Songs_Container-->
+            <div class="song-container">
+
+                <!--Top_Right_Title-->
+                <div class="top_right_header">Top 30 Songs</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Featured Charts-->
+    <div class="section_one">
+        <div class="heading_section_one">Featured Charts</div>
+        <div class="song-container-S1">
+            <div class="song1">
+                <div class="image-container">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Trending-->
+    <div class="section_two">
+        <div class="heading_section_two">Trending</div>
+        <div class="song-container-S2">
+            <div class="song1">
+                <div class="image-container">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Recommended-->
+    <div class="section_three">
+        <div class="heading_section_three">Recommended</div>
+        <div class="song-container-S3">
+            <div class="song1">
+                <div class="image-container2">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Bottom_Audio_Controls-->
+    <div class="media-controller">
+        <audio id="audio-player" controls></audio>
+    </div>
+
+    <!--Main_Javascript_File-->
+    <script src="harmony4.0.js"></script>
+</body>
+
+</html>
